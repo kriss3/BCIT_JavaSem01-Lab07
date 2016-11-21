@@ -1,9 +1,11 @@
 /**
  * A class to model a Person.
  * 
- * @author Gary Tong
+ * @author Gary Tong (Original creator)
+ * @modifiedBy Krzysztof Szczurowski
  * @version 1.0
  * @date 2016-10-28
+ * @since 11/20/2016
  */
 public class Person
 {
@@ -174,7 +176,9 @@ public class Person
 
 
     /**
-     * Sets the first name of the new Person.
+     * Sets the first name of the new Person; <br>
+     * Verifies passed parameter against null and an empty string; <br>
+     * calls displayError(<String>) if any above is true;
      * @param firstName The new first name of the person.
      */
     public void setFirstName(String firstName)
@@ -192,6 +196,8 @@ public class Person
 
     /**
      * Sets the last name of the Person.
+     * Verifies passed parameter against null and an empty string; <br>
+     * calls displayError(<String>) if any above is true;
      * @param lastName The new last name of the Person.
      */
     public void setLastName(String lastName)
@@ -199,7 +205,7 @@ public class Person
        if(lastName == null || lastName.equals(""))
         {
             displayError(lastName);
-            this.lastName  = "Gains";
+            this.lastName  = "Gein";
         }
         else
         {
@@ -303,8 +309,12 @@ public class Person
     
     private void displayError(String value)
     {
-        System.out.println("Are you crazy !!!\n Wrong value passed to the class !!! \n" +
-                    "You have entered: " + value);
+        String result = "";
+        result = value == null ? "null" : "<Empty String>";
+        
+        System.out.println("This is crazy! Why? Why? Why !!!\n" +
+                           "Wrong value passed to the class !!! \n" +
+                           "You have entered: " + result);
     }
 }
 
