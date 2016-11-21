@@ -4,7 +4,7 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:				Lab 08 for Gary Tong;
+PROJECT TITLE:				Lab 07 for Gary Tong;
 PURPOSE OF PROJECT:			Practising Java using objects first; 
 VERSION or DATE:			1.1
 HOW TO START THIS PROJECT: 	run package.bluej
